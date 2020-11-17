@@ -1,3 +1,24 @@
 body {
-    
+    font-size: 1.25em;
+}
+
+/* header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background-color: lightgrey;
+} */
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    background-color: lightgrey;
 }
