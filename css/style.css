@@ -1,5 +1,6 @@
 body {
     font-size: 1.25em;
+    background-color: slategray;
 }
 
 /* header {
@@ -13,12 +14,15 @@ body {
 } */
 
 footer{
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     height: fit-content;
     padding: 5px;
     text-align: center;
-    background-color: lightgrey;
+}
+
+.banner {
+    width: 100%;
 }
