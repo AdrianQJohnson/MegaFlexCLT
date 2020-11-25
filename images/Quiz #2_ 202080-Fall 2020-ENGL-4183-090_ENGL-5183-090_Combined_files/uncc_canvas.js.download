@@ -1,0 +1,27 @@
+$(document).ready(function(){
+	$('label[for=pseudonym_session_unique_id_forgot]').html('Email address');
+
+	$('#allowed_extensions_container #explanation_nest').html('Enter a list of accepted extensions, for example: doc, docx, xls, xlsx, txt');
+
+	// Hide delete and reset buttons on course settings page for non-admins
+	if (/^\/courses\/[0-9]+\/settings$/.test(window.location.pathname)) {
+		if($.inArray('admin',ENV.current_user_roles) == -1){
+			$('a[href*=\'confirm_action?event=delete\']').hide();
+			//$('a[href*=\'/reset\']').hide();
+		}
+	}
+
+	var current_term = $("#section-tabs-header-subtitle").text();
+	//if (current_term == 'Spring 2020') {
+		if ($("#assignment_vericite_enabled").is(":checked")) {
+			$('label[for=assignment_vericite_enabled]').show();
+		} else {
+			$('label[for=assignment_vericite_enabled]').hide();
+		}
+	//}
+
+});
+
+var forgot_password_instructions = "Enter your Email address and we'll send you a link to change your password."
+document.getElementById("forgot_password_instructions").innerHTML = forgot_password_instructions;
+//document.getElementsByTagName("label")[2].firstChild.data = "Email address";
