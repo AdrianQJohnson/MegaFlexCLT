@@ -3,6 +3,11 @@ body {
     background-color: slategray;
 }
 
+a, .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .container {
     @media (max-width: 480px) {
         width: 100%;
@@ -25,6 +30,15 @@ footer{
     height: fit-content;
     padding: 5px;
     text-align: center;
+}
+
+.training-pic {
+    float: left;
+    margin-right: 20px;
+}
+
+img {
+    border-radius: 12px;
 }
 
 .banner {
